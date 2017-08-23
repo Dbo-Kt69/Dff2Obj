@@ -8,7 +8,7 @@ enum eRWSectionType
 	rwSTRING			= 0x2,
 	rwEXTENSION			= 0x3,
 	rwCLUMP				= 0x10,
-	rwGEOMETRYLIST		= 0x1A
+	rwGEOMETRYLIST			= 0x1A
 };
 
 enum eRWSectionGeometryFormat
@@ -19,7 +19,7 @@ enum eRWSectionGeometryFormat
 	rpGEOMETRYPRELIT				= 0x00000008,
 	rpGEOMETRYNORMALS				= 0x00000010,
 	rpGEOMETRYLIGHT					= 0x00000020,
-	rpGEOMETRYMODULATEMATERIALCOLOR	= 0x00000040,
+	rpGEOMETRYMODULATEMATERIALCOLOR			= 0x00000040,
 	rpGEOMETRYTEXTURED2				= 0x00000080,
 	rpGEOMETRYNATIVE				= 0x01000000,
 };
@@ -281,9 +281,6 @@ bool Bml2Xml(const char* infile, const char* outfile)
 	ok = true;
 
 END:
-
-#undef READ_SECTION
-#undef READ_VALUE
 
 	if (NULL != in)
 	{
